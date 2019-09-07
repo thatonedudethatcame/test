@@ -1,0 +1,36 @@
+<title>kernel86</title>
+<style>
+	div.navbar {
+		background-color: black;
+	}
+	.startButton {
+		background-color: green;
+		color: white;
+	}
+	.navButton {
+		background-color: blue;
+		color: black;
+	}
+	.imhidden {
+		display:none;
+	}
+	.show{display:block;}
+</style>
+<script>
+	alert("Error while loading all files with html in there name");
+
+	function hidden() {
+		("#button1").click(function() {
+			('#meh').toggleClass('show');
+		});
+	});
+</script>
+<div class="navbar">
+	<a id="rev" class="startButton" href="#desktop?start=true">Start</button>
+	<a id="rev1" class="navButton" href="#desktop?t-obj=showing">Test Object</a>
+	<button class="navButton" id="button1" onclick="hidden()">Click Me!</button>
+</div>
+<h1>Desktop</h1>
+<p>Why are you still reading this?</p>
+
+<p id="meh" class="imhidden">This is invisible...or is it?</p>
